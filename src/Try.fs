@@ -34,4 +34,4 @@ module Try =
 
   let inline recover recovery = function
     | Failure e -> recovery e
-    | any -> any
+    | Success value -> Success value
