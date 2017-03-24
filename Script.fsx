@@ -1,10 +1,7 @@
-// Learn more about F# at http://fsharp.org. See the 'F# Tutorial' project
-// for more guidance on F# programming.
-
-#load "Try.fs"
-#load "Utils.fs"
-#load "Async.fs"
-#load "Actor.fs"
+#load "src/Try.fs"
+#load "src/Utils.fs"
+#load "src/Async.fs"
+#load "src/Actor.fs"
 
 open System
 
