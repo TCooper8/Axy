@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="src/Option.fs" />
     <Compile Include="src/Try.fs" />
     <Compile Include="src/Utils.fs" />
     <Compile Include="src/Async.fs" />

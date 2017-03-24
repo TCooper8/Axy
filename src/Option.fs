@@ -1,6 +1,6 @@
 namespace Axiom
 
-module Async =
+module Option =
   let inline getOrElse compensation = function
     | None -> compensation ()
     | Some value -> value
