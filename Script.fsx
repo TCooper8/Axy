@@ -15,13 +15,6 @@ module ActorTest =
       Actor.Stopped
     receive = fun x -> function
       | Actor.Notify (chan, y) ->
-        if y = 100 then invalidArg "y" (string y)
         chan.Reply(x)
         Actor.Running y
   }
-
-  for i in 0 .. 1000000 do
-    let x = actor.PostAndReply(fun reply -> Actor.Notify (reply, i))
-    printfn "Got: %A" x
-
-  Console.ReadKey () |> ignore
