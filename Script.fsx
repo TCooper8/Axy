@@ -12,9 +12,10 @@ module ActorTest =
     initialState = 5
     onFailed = fun state e ->
       sprintf "Error: %A" e
-      Actor.Running state
+      Actor.Stopped
     receive = fun x -> function
       | Actor.Notify (chan, y) ->
+        if y = 100 then invalidArg "y" (string y)
         chan.Reply(x)
         Actor.Running y
   }

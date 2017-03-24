@@ -37,10 +37,16 @@ module Actor =
           |> Async.bind loop
 
         | Failed (state, e) ->
-          actorBox.onFailed state e
-          |> loop
+          printfn "Recovering actor..."
+          try
+            actorBox.onFailed state e
+            |> loop
+          with e ->
+            actorBox.onFailed state e
+            |> loop
 
         | Stopped ->
+          printfn "Actor stopped."
           async.Zero ()
 
       actorBox.initialState |> Running |> loop
