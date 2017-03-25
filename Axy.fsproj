@@ -32,25 +32,6 @@
     <WarningLevel>3</WarningLevel>
     <DocumentationFile>bin\Release\Axy.XML</DocumentationFile>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="src/Option.fs" />
-    <Compile Include="src/Try.fs" />
-    <Compile Include="src/Utils.fs" />
-    <Compile Include="src/Async.fs" />
-    <Compile Include="src/Actor.fs" />
-    <None Include="Script.fsx" />
-    <None Include="Axy.nuspec" />
-    <None Include="Library.fsx" />
-    <None Include="README.md" />
-  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -67,6 +48,26 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="src/Option.fs" />
+    <Compile Include="src/Try.fs" />
+    <Compile Include="src/Utils.fs" />
+    <Compile Include="src/Async.fs" />
+    <Compile Include="src/Actor.fs" />
+    <None Include="Script.fsx" />
+    <None Include="Axy.nuspec" />
+    <None Include="Library.fsx" />
+    <None Include="README.md" />
+    <Content Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
