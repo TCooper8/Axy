@@ -1,1 +1,1 @@
-# Axiom - F# core functionality for Axiom plugins.
+# Axy - F# core functionality for Axy plugins.

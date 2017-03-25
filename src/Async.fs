@@ -1,4 +1,4 @@
-namespace Axiom
+namespace Axy
 
 module Async =
   let inline map mapping task = async {
