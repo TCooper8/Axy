@@ -5,13 +5,13 @@
 
 open System
 
-open Axiom
+open Axy
 
 module ActorTest =
   let actor: (int AsyncReplyChannel * int) Actor.ActorEvent Actor = Actor.actorOf {
     initialState = 5
     onFailed = fun state e ->
-      sprintf "Error: %A" e
+      sprintf "Error: %A" e |> ignore
       Actor.Stopped
     receive = fun x -> function
       | Actor.Notify (chan, y) ->

@@ -1,4 +1,4 @@
-namespace Axiom
+namespace Axy
 
 type 'a Try =
   | Success of 'a

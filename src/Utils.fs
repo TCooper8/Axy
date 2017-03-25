@@ -1,4 +1,4 @@
-namespace Axiom
+namespace Axy
 
 [<AutoOpen>]
 module Utils =

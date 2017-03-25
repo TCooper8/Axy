@@ -1,6 +1,6 @@
-namespace Axiom
+namespace Axy
 
-open Axiom
+open Axy
 
 type 'a Actor = 'a MailboxProcessor
 

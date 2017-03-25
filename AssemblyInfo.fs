@@ -1,4 +1,4 @@
-namespace axiom.AssemblyInfo
+namespace Axy.AssemblyInfo
 
 open System.Reflection
 open System.Runtime.CompilerServices
@@ -7,11 +7,11 @@ open System.Runtime.InteropServices
 (* General Information about an assembly is controlled through the following 
 set of attributes. Change these attribute values to modify the information
 associated with an assembly. *)
-[<assembly: AssemblyTitle("axiom")>]
+[<assembly: AssemblyTitle("Axy")>]
 [<assembly: AssemblyDescription("")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("MyOrg")>]
-[<assembly: AssemblyProduct("axiom")>]
+[<assembly: AssemblyProduct("Axy")>]
 [<assembly: AssemblyCopyright("Copyright © MyOrg 2017")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]

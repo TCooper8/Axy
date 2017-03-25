@@ -1,4 +1,4 @@
-namespace Axiom
+namespace Axy
 
 module Option =
   let inline getOrElse compensation = function
