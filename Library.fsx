@@ -3,4 +3,4 @@
 #load "src/Async.fs"
 #load "src/Actor.fs"
 
-open Axiom
+open Axy
