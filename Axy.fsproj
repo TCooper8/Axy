@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0a5af930-5378-4b5f-bc73-c83581a856a1</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>axiom</RootNamespace>
-    <AssemblyName>axiom</AssemblyName>
+    <RootNamespace>Axy</RootNamespace>
+    <AssemblyName>Axy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>Axy</Name>
@@ -21,7 +21,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\axiom.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Axy.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\axiom.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Axy.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -47,7 +47,7 @@
     <Compile Include="src/Async.fs" />
     <Compile Include="src/Actor.fs" />
     <None Include="Script.fsx" />
-    <None Include=".nuspec" />
+    <None Include="Axy.nuspec" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
